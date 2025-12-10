@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới Thiệu Sản Phẩm</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Giới Thiệu Sản Phẩm & Thành Viên</h1>
+        <h2>Thành viên nhóm</h2>
+        <ul>
+            <li><strong>Nguyễn Hoàng Phúc</strong> - CE182253</li>
+            <li><strong>Nguyễn Minh Thông</strong> - CE180306</li>
+            <li><strong>Nguyễn Hoàng Sang</strong> - CE181231</li>
+        </ul>
+        <h2>Sơ lược về website</h2>
+        <p>
+            Web này là một hệ thống thu thập, tổng hợp và tóm tắt thông tin các sản phẩm nông nghiệp             scrapy crawl fruit_spider -o fruits_data.jsonlinesscrapy crawl fruit_spider -o fruits_data.jsonlines nguồn trên Internet, .<br>
+            Dữ liệu được crawl tự động bằng Scrapy, sau đó sử dụng AI (Ollama) để tóm tắt mô tả sản phẩm thành các thuộc tính dễ hiểu.<br>
+            Người dùng có thể xem nhanh thông tin, giá cả, hình ảnh và tóm tắt đặc điểm nổi bật của từng sản phẩm.<br>
+            Mục tiêu của nhóm là hỗ trợ người dùng tiết kiệm thời gian tìm kiếm, so sánh và lựa chọn sản phẩm phù hợp trong mùa vụ nông nghiệp đang diễn ra vào thời điểm hiện tại.
+        </p>
+        <a href="{{ url_for('index') }}">Quay lại trang chính</a>
+    </div>
+</body>
+</html>
